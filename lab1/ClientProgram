@@ -1,0 +1,24 @@
+using System;
+using System.IO.Pipes;
+using System.Runtime.InteropServices;
+
+class ClientProgram
+{
+    static void Main()
+    {
+        using (var clientPipe = new NamedPipeClientStream(".", "MyPipe", PipeDirection.In))
+        {
+            Console.WriteLine("Подключение к серверу...");
+            clientPipe.Connect();
+
+            Span<byte> receivedData = new byte[Marshal.SizeOf<MyData>()];
+
+            // Чтение данных от сервера
+            clientPipe.Read(receivedData);
+
+            MyData receivedDataStruct = MemoryMarshal.Cast<byte, MyData>(receivedData)[0];
+
+            Console.WriteLine($"Получены данные от сервера: Value1 = {receivedDataStruct.Value1}, Value2 = {receivedDataStruct.Value2}");
+        }
+    }
+}
