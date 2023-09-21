@@ -1,0 +1,5 @@
+public struct MyData
+{
+    public int Value1;
+    public string Value2;
+}
