@@ -1,0 +1,28 @@
+using System;
+using System.IO.Pipes;
+using System.Runtime.InteropServices;
+
+class ServerProgram
+{
+    static void Main()
+    {
+        using (var serverPipe = new NamedPipeServerStream("MyPipe", PipeDirection.Out))
+        {
+            Console.WriteLine("Ожидание подключения клиента...");
+            serverPipe.WaitForConnection();
+
+            MyData dataToSend = new MyData
+            {
+                Value1 = 42,
+                Value2 = "Hello, client!"
+            };
+
+            Span<byte> dataBytes = MemoryMarshal.AsBytes(dataToSend);
+
+            // Отправка данных клиенту
+            serverPipe.Write(dataBytes);
+
+            Console.WriteLine("Данные отправлены сервером.");
+        }
+    }
+}
