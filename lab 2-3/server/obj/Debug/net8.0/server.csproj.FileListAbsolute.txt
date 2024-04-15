@@ -1,0 +1,14 @@
+C:\Users\Book\Desktop\lab_3\server\obj\Debug\net8.0\server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Book\Desktop\lab_3\server\obj\Debug\net8.0\server.AssemblyInfoInputs.cache
+C:\Users\Book\Desktop\lab_3\server\obj\Debug\net8.0\server.AssemblyInfo.cs
+C:\Users\Book\Desktop\lab_3\server\obj\Debug\net8.0\server.csproj.CoreCompileInputs.cache
+C:\Users\Book\Desktop\lab_3\server\bin\Debug\net8.0\server.exe
+C:\Users\Book\Desktop\lab_3\server\bin\Debug\net8.0\server.deps.json
+C:\Users\Book\Desktop\lab_3\server\bin\Debug\net8.0\server.runtimeconfig.json
+C:\Users\Book\Desktop\lab_3\server\bin\Debug\net8.0\server.dll
+C:\Users\Book\Desktop\lab_3\server\bin\Debug\net8.0\server.pdb
+C:\Users\Book\Desktop\lab_3\server\obj\Debug\net8.0\server.dll
+C:\Users\Book\Desktop\lab_3\server\obj\Debug\net8.0\refint\server.dll
+C:\Users\Book\Desktop\lab_3\server\obj\Debug\net8.0\server.pdb
+C:\Users\Book\Desktop\lab_3\server\obj\Debug\net8.0\server.genruntimeconfig.cache
+C:\Users\Book\Desktop\lab_3\server\obj\Debug\net8.0\ref\server.dll
